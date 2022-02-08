@@ -20,7 +20,8 @@ pipeline {
         	steps{
             		jacoco()
 		}
-	}   
+	} 
+	  
 	stage('SonarQube'){
 		steps{
 				bat label: '', script: '''mvn sonar:sonar \
